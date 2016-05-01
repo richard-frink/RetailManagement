@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="609.0" style="-fx-background-color: grey;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.AdminLoginController">
+    <stylesheets>
+        <URL value="@adminlogin.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="248.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleloginAdmin" text="Login" />
+      <Label layoutX="185.0" layoutY="116.0" text="Administrator">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adminUser" layoutX="190.0" layoutY="181.0" prefHeight="51.0" prefWidth="213.0" />
+      <Label layoutX="38.0" layoutY="181.0" text="Username">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="242.0" text="Password">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="388.0" layoutY="37.0" mnemonicParsing="false" onAction="#goToCust" text="Go to Customer" />
+      <PasswordField fx:id="adminPass" layoutX="190.0" layoutY="242.0" prefHeight="51.0" prefWidth="213.0" />
+   </children>
+    
+    
+</AnchorPane>

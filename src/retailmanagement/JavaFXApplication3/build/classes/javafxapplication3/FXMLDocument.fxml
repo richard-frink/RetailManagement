@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="411.0" prefWidth="320" style="-fx-background-color: #0F672A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLDocumentController">
+    <children>
+      <HBox fx:id="hbo" alignment="TOP_RIGHT" prefHeight="419.0" prefWidth="332.0" style="-fx-border-width: 100%;">
+         <children>
+            <VBox alignment="BASELINE_CENTER" prefHeight="395.0" prefWidth="303.0">
+               <children>
+                  <ImageView id="img" fitHeight="193.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dashin.jpg" />
+                     </image>
+                  </ImageView>
+                    <Button id="btn1" fx:id="goToLogin" onAction="#handleGoToLogin" style="-fx-background-color: white;" text="Go to Login" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
