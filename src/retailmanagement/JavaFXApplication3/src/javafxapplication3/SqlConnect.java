@@ -67,12 +67,7 @@ public class SqlConnect {
      * @return a ResultSet object capable of finding values using key
      * @throws SQLException
      */
-    public String runQuery(String query) throws SQLException {
-        ResultSet results;
-        String s;
-        results = this.connection.createStatement().executeQuery(query);
-        s = results.toString();
-        return s;
-        //return results;
+    public ResultSet runQuery(String query) throws SQLException {
+        return connection.createStatement().executeQuery(query);
     }
 }

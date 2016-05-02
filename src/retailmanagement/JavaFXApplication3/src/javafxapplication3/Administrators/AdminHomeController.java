@@ -15,8 +15,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class for HomeAdmin
@@ -25,7 +28,8 @@ import javafx.scene.layout.AnchorPane;
  * @author sam
  */
 public class AdminHomeController implements Initializable {
-
+    @FXML
+    private Button btnLogout;
     @FXML
     private Button btnHome;
     @FXML
@@ -52,7 +56,11 @@ public class AdminHomeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-
+        try {
+            contentPane.getChildren().setAll((Node) FXMLLoader.load(AdminHomeController.class.getResource("adminHello.fxml")));
+        } catch (IOException e) {
+            System.out.print(e);
+        }
         homeButtonAction();
         employeesButtonAction();
         inventoryButtonAction();
@@ -61,6 +69,7 @@ public class AdminHomeController implements Initializable {
         reportsButtonAction();
         vendorsButtonAction();
         propertyButtonAction();
+        logoutButtonAction();
 
     }
 
@@ -108,6 +117,7 @@ public class AdminHomeController implements Initializable {
             }
         });
     }
+
     public void ordersButtonAction() {
         btnOrders.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -123,6 +133,7 @@ public class AdminHomeController implements Initializable {
         });
 
     }
+
     public void reportsButtonAction() {
         btnReports.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -137,6 +148,7 @@ public class AdminHomeController implements Initializable {
             }
         });
     }
+
     public void eventsButtonAction() {
         btnEvents.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -151,6 +163,7 @@ public class AdminHomeController implements Initializable {
             }
         });
     }
+
     public void vendorsButtonAction() {
         btnVendors.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -165,6 +178,7 @@ public class AdminHomeController implements Initializable {
             }
         });
     }
+
     public void propertyButtonAction() {
         btnProperty.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -180,5 +194,26 @@ public class AdminHomeController implements Initializable {
         });
     }
 
+    public void logoutButtonAction() {
+        btnLogout.setOnAction(new EventHandler<ActionEvent>() {
+
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("I heard someone click the Logout btn in Admin Main!");
+                try {
+                    Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    Parent root = FXMLLoader.load(getClass().getResource("../Runner.fxml"));
+
+                    Scene scene = new Scene(root, 800, 600);
+
+                    primaryStage.setScene(scene);
+                    primaryStage.show();
+                } catch (IOException e) {
+                    System.out.print(e);
+                }
+            }
+        });
     }
+
+}
 

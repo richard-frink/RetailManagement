@@ -7,6 +7,7 @@ package javafxapplication3;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
@@ -16,8 +17,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
+import static javafxapplication3.Runner.sC;
 
 /**
  * FXML Controller class
@@ -26,11 +30,14 @@ import javafx.stage.Stage;
  */
 public class LoginPageController implements Initializable {
 
-    public static String custUserName;
     @FXML
-    public TextField custUser;
+    public TextField emplUser;
     @FXML
-    public TextField custPass;
+    public TextField emplPass;
+    @FXML
+    public Label notice;
+
+    ResultSet credentials;
 
     /**
      * Initializes the controller class.
@@ -55,22 +62,31 @@ public class LoginPageController implements Initializable {
     }
 
     @FXML
-    private void handleloginCust(ActionEvent event) throws IOException {
+    private void handleloginEmpl(ActionEvent event) throws IOException {
+        System.out.println("Mae it to login");
+        String query = "SELECT * FROM rsussa1db.Employees WHERE username=\"" + emplUser.getText() + "\" AND password=\"" + emplPass.getText() + "\";";
+        try {
+            System.out.println(query);
+            credentials = Runner.sC.runQuery(query);
+            if (!credentials.isBeforeFirst()) {
+                System.out.println("No data");
+                emplUser.setText("");
+                emplPass.setText("");
+                notice.setText("Incorrect credentials. Please try again!");
+            } else {
+                //fun stuff
+                System.out.println("Login Submitted");
+                notice.setText("");
 
+                Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                Parent root = FXMLLoader.load(getClass().getResource("homeEmployee.fxml"));
 
-        System.out.println("Login Submitted");
-        if (custUser.getText().equals("testcust") && custPass.getText().equals("password")) {
-
-            Parent root = FXMLLoader.load(getClass().getResource("HomeCust.fxml"));
-            Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root, 800, 600);
-            custUserName = custUser.getText();
-            primaryStage.setScene(scene);
-            primaryStage.show();
-
-        } else {
-            custPass.setText("Try Again!");
-            custUser.setText("Try Again!");
+                Scene scene = new Scene(root, 800, 600);
+                primaryStage.setScene(scene);
+                primaryStage.show();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

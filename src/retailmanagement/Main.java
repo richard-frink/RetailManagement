@@ -11,9 +11,10 @@ import java.util.logging.Logger;
 
 public class Main {
 
-    static final String userName= "rsussa1";//put your MySQL user name tsmith60
-    static final String password= "Cosc*q76p";//put your MySQL password  Mine is Cosc*2jk6
-    private static Connection connection=null;
+    static final String userName = "rsussa1";//put your MySQL user name tsmith60
+    static final String password = "Cosc*q76p";//put your MySQL password  Mine is Cosc*2jk6
+    private static Connection connection = null;
+
     /**
      * @param args the command line arguments
      * @throws java.lang.ClassNotFoundException
@@ -29,14 +30,13 @@ public class Main {
         //PreparedStatement updateStaff;
         Statement queryStatement = connection.createStatement();
         //updateStaff = null;
-            String querys="select * from rsussa1db.Employees;";
-            ResultSet results = queryStatement.executeQuery(querys);
-            while(results.next())
-            {
-                System.out.print(results.getString("SSN"));
-                System.out.print("    ");
-                System.out.print(results.getString("Name"));
-                System.out.println();
-            }
+        String querys = "SELECT * FROM rsussa1db.Employees WHERE ManagerFlag=false";
+        ResultSet results = queryStatement.executeQuery(querys);
+        while (results.next()) {
+            System.out.print(results.getString("Username"));
+            System.out.print("    ");
+            System.out.print(results.getString("Password"));
+            System.out.println();
+        }
     }
 }

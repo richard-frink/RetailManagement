@@ -7,6 +7,7 @@ package javafxapplication3;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
@@ -16,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -30,6 +32,10 @@ public class AdminLoginController implements Initializable {
     public TextField adminUser;
     @FXML
     public TextField adminPass;
+    @FXML
+    public Label notice;
+
+    ResultSet credentials;
 
     /**
      * Initializes the controller class.
@@ -55,19 +61,28 @@ public class AdminLoginController implements Initializable {
 
     @FXML
     private void handleloginAdmin(ActionEvent event) throws IOException {
-
-        System.out.println("Login Submitted");
-        if (adminUser.getText().equals("testadmin") && adminPass.getText().equals("password")) {
-
-            Parent root = FXMLLoader.load(getClass().getResource("Administrators/adminMasterLayout.fxml"));
-            Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root, 800, 600);
-
-            primaryStage.setScene(scene);
-            primaryStage.show();
-
-        } else {
-            adminUser.setText("Try Again!");
+        System.out.println("Mae it to login");
+        String query = "SELECT * FROM rsussa1db.Employees WHERE username=\"" + adminUser.getText() + "\" AND password=\"" + adminPass.getText() + "\";";
+        try {
+            System.out.println(query);
+            credentials = Runner.sC.runQuery(query);
+            System.out.println("Login Submitted");
+            if (!credentials.isBeforeFirst()) {
+                System.out.println("No data");
+                adminUser.setText("");
+                adminPass.setText("");
+                notice.setText("Incorrect credentials. Please try again!");
+            } else {
+                //fun stuff
+                notice.setText("");
+                Parent root = FXMLLoader.load(getClass().getResource("Administrators/adminMasterLayout.fxml"));
+                Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                Scene scene = new Scene(root, 800, 600);
+                primaryStage.setScene(scene);
+                primaryStage.show();
+            }
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
 

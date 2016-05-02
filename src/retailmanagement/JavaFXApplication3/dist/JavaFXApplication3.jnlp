@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXApplication3.jnlp">
+<jnlp spec="1.0" xmlns:jfx="http://www.javafx.com" href="JavaFXApplication3.jnlp">
   <information>
     <title>JavaFXApplication3</title>
     <vendor>Ted</vendor>
@@ -14,6 +14,6 @@
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaFXApplication3" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="javafxapplication3.JavaFXApplication3"  name="JavaFXApplication3" />
+  <jfx:javafx-desc width="800" height="600" main-class="javafxapplication3.Runner" name="JavaFXApplication3" />
   <update check="always"/>
 </jnlp>
