@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane fx:id="splitPane" dividerPositions="0.19899665551839466" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.Administrators.HomeAdminController">
+<SplitPane fx:id="splitPane" dividerPositions="0.19899665551839466" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.Administrators.AdminHomeController">
   <items>
     <AnchorPane id="navigationPane" fx:id="navigationPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
@@ -57,6 +57,6 @@
                </children>
             </VBox>
          </children></AnchorPane>
-    <AnchorPane id="contentPane" fx:id="contentPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+    <AnchorPane id="contentPane" fx:id="contentPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="740.0" />
   </items>
 </SplitPane>

@@ -59,7 +59,7 @@ public class AdminLoginController implements Initializable {
         System.out.println("Login Submitted");
         if (adminUser.getText().equals("testadmin") && adminPass.getText().equals("password")) {
 
-            Parent root = FXMLLoader.load(getClass().getResource("Administrators/HomeAdmin.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("Administrators/adminMasterLayout.fxml"));
             Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root, 800, 600);
 
@@ -67,7 +67,6 @@ public class AdminLoginController implements Initializable {
             primaryStage.show();
 
         } else {
-            adminPass.setText("Try Again!");
             adminUser.setText("Try Again!");
         }
     }
