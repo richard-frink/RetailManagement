@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -19,16 +20,10 @@
                   <Button mnemonicParsing="false" onAction="#custPump" prefHeight="97.0" prefWidth="209.0" text="Pump" />
                </children>
             </HBox>
-      <TableView layoutX="20.0" layoutY="127.0" prefHeight="273.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="127.0">
+      <TableView editable="true" layoutX="211.0" layoutY="113.0" prefHeight="273.0" prefWidth="179.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="113.0">
         <columns>
           <TableColumn prefWidth="75.0" text="Date" />
-          <TableColumn prefWidth="75.0" text="Mon" />
-            <TableColumn prefWidth="75.0" text="Tues" />
-            <TableColumn prefWidth="75.0" text="Wed" />
-            <TableColumn prefWidth="75.0" text="Thurs" />
-            <TableColumn prefWidth="75.0" text="Fri" />
-            <TableColumn prefWidth="75.0" text="Sat" />
-            <TableColumn prefWidth="75.0" text="Sun" />
+          <TableColumn prefWidth="106.0" text="Hours Worked" />
         </columns>
       </TableView>
    </children>

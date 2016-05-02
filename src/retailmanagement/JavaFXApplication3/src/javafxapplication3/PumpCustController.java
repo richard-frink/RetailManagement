@@ -6,9 +6,11 @@
 package javafxapplication3;
 
 import javafxapplication3.Customers.*;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -31,29 +33,32 @@ public class PumpCustController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-     @FXML
-    private void custHome(ActionEvent event) throws IOException { 
-         Parent root = FXMLLoader.load(getClass().getResource("HomeCust.fxml"));
-                         Stage primaryStage = (Stage)  ((Node)event.getSource()).getScene().getWindow();
-                         Scene scene = new Scene(root, 500,500);
-                         primaryStage.setScene(scene);
-                        primaryStage.show();
     }
+
     @FXML
-    private void custTimeSheet(ActionEvent event) throws IOException { 
-         Parent root = FXMLLoader.load(getClass().getResource("TimesheetCust.fxml"));
-                         Stage primaryStage = (Stage)  ((Node)event.getSource()).getScene().getWindow();
-                         Scene scene = new Scene(root, 500,500);
-                         primaryStage.setScene(scene);
-                        primaryStage.show();
+    private void custHome(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("HomeCust.fxml"));
+        Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root, 800, 600);
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
+
     @FXML
-    private void custPump(ActionEvent event) throws IOException { 
-         Parent root = FXMLLoader.load(getClass().getResource("PumpCust.fxml"));
-                         Stage primaryStage = (Stage)  ((Node)event.getSource()).getScene().getWindow();
-                         Scene scene = new Scene(root, 500,500);
-                         primaryStage.setScene(scene);
-                        primaryStage.show();
+    private void custTimeSheet(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("TimesheetCust.fxml"));
+        Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root, 800, 600);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    @FXML
+    private void custPump(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("PumpCust.fxml"));
+        Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root, 800, 600);
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 }
