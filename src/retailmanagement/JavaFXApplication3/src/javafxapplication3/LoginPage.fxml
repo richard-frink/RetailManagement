@@ -43,7 +43,7 @@
                         <Insets top="20.0" />
                      </VBox.margin>
                   </Label>
-                  <Label fx:id="notice" textFill="RED" />
+                  <Label fx:id="notice" textFill="#ff9a00" />
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label id="userLab" text="Username" textFill="WHITE">
