@@ -30,12 +30,12 @@ public class Main {
         //PreparedStatement updateStaff;
         Statement queryStatement = connection.createStatement();
         //updateStaff = null;
-        String querys = "SELECT * FROM rsussa1db.Employees WHERE ManagerFlag=false";
+        String querys = "SELECT * FROM rsussa1db.Employees";
         ResultSet results = queryStatement.executeQuery(querys);
         while (results.next()) {
             System.out.print(results.getString("Username"));
             System.out.print("    ");
-            System.out.print(results.getString("Password"));
+            System.out.print(results.getString("title"));
             System.out.println();
         }
     }

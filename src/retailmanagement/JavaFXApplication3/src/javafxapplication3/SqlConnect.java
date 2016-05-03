@@ -17,6 +17,11 @@ public class SqlConnect {
 
     static final String userName = "rsussa1";//put your MySQL user name tsmith60
     static final String password = "Cosc*q76p";//put your MySQL password  Mine is Cosc*2jk6
+
+    public static Connection getConnection() {
+        return connection;
+    }
+
     private static Connection connection=null;
 
 

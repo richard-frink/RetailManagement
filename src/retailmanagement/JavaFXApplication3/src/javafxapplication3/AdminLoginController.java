@@ -17,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -34,6 +35,7 @@ public class AdminLoginController implements Initializable {
     public TextField adminPass;
     @FXML
     public Label notice;
+
 
     ResultSet credentials;
 
