@@ -36,32 +36,6 @@ public class SqlConnect {
     }
 
     /**
-     * @throws java.lang.ClassNotFoundException
-     * @throws java.lang.InstantiationException
-     * @throws java.lang.IllegalAccessException
-     * @throws java.sql.SQLException
-     */
-    public String run() throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
-        String holder = "";
-        Object newInstance;
-        newInstance = Class.forName("com.mysql.jdbc.Driver").newInstance();
-        connection = DriverManager.getConnection("jdbc:mysql://triton.towson.edu:3360/rsussa1db", userName, password);// Please use your database name here
-        //PreparedStatement updateStaff;
-        Statement queryStatement = connection.createStatement();
-        //updateStaff = null;
-        String querys = "select * from rsussa1db.Employees;";
-        ResultSet results = queryStatement.executeQuery(querys);
-        while (results.next()) {
-            System.out.print(results.getString("SSN"));
-            System.out.print("    ");
-            System.out.print(results.getString("Name"));
-            System.out.println();
-            holder += " SSN " + results.getString("SSN") + " Name " + results.getString("Name") + "\n";
-        }
-        return holder;
-    }
-
-    /**
      * This method is a skeleton method for executing queries using a string
      * @param query The query to be run
      * @return a ResultSet object capable of finding values using key
