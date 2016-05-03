@@ -101,5 +101,9 @@
       </VBox>
       <Button fx:id="btnAddAdd" layoutX="277.0" layoutY="564.0" mnemonicParsing="false" onAction="#handleAddNewBtn" text="Add" visible="false" />
       <Button fx:id="btnAddCancel" layoutX="323.0" layoutY="564.0" mnemonicParsing="false" onAction="#handleCancelBtn" text="Cancel" visible="false" />
+      <Label fx:id="lblAddUsername" layoutX="276.0" layoutY="468.0" text="Username" visible="false" />
+      <TextField fx:id="txtAddUsername" layoutX="345.0" layoutY="463.0" visible="false" />
+      <Label fx:id="lblAddPassword" layoutX="279.0" layoutY="499.0" text="Password" visible="false" />
+      <PasswordField fx:id="txtAddPassword" layoutX="345.0" layoutY="494.0" visible="false" />
     </children>
 </AnchorPane>

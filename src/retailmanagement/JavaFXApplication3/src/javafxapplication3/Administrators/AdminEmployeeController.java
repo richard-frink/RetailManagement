@@ -107,8 +107,20 @@ public class AdminEmployeeController implements Initializable {
     @FXML
     private Button btnAddCancel;
 
+    @FXML
+    private Label lblAddUsername;
 
-    private static ObservableList<ObservableList> data;
+    @FXML
+    private Label lblAddPassword;
+
+    @FXML
+    private TextField txtAddUsername;
+
+    @FXML
+    private PasswordField txtAddPassword;
+
+
+    //private static ObservableList<ObservableList> data;
 
     private String indexSSN = "";
 
@@ -155,9 +167,10 @@ public class AdminEmployeeController implements Initializable {
     }
 
     private void populateTableView() {
+        tblEmployees.getColumns().clear();
         try {
-            ResultSet rs = Runner.sC.runQuery("SELECT SSN,Name,ManagerFlag,HourlyRate FROM rsussa1db.Employees;");
-            data = FXCollections.observableArrayList();
+            ResultSet rs = Runner.sC.runQuery("SELECT SSN,Name,ManagerFlag,HourlyRate,Username FROM rsussa1db.Employees;");
+            ObservableList<ObservableList> data = FXCollections.observableArrayList();
             for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
                 //We are using non property style for making dynamic table
                 final int j = i;
@@ -198,7 +211,7 @@ public class AdminEmployeeController implements Initializable {
         System.out.println("About To Save record");
         // perform input validation to detect attacks
 
-        String query = "UPDATE Employees SET Name=?,ManagerFlag=?,HourlyRate=? WHERE SSN=?";
+        String query = "UPDATE Employees SET Name=?,ManagerFlag=?,HourlyRate=?,Username=? WHERE SSN=?";
 
         PreparedStatement pstmt = Runner.sC.getConnection().prepareStatement(query);
         pstmt.setString(1, btnName.getText());
@@ -208,7 +221,8 @@ public class AdminEmployeeController implements Initializable {
             pstmt.setString(2, "0");
         }
         pstmt.setString(3, btnHourlyRate.getText());
-        pstmt.setString(4, btnSSN.getText());
+        pstmt.setString(4, txtAddUsername.getText());
+        pstmt.setString(5, btnSSN.getText());
 
         System.out.println(pstmt.toString());
 
@@ -291,13 +305,18 @@ public class AdminEmployeeController implements Initializable {
         btnAddAdd.setVisible(true);
 
         btnAddEmployee.setVisible(false);
+
+        lblAddUsername.setVisible(true);
+        lblAddPassword.setVisible(true);
+        txtAddUsername.setVisible(true);
+        txtAddPassword.setVisible(true);
     }
 
     @FXML
     private void handleAddNewBtn(ActionEvent event) throws IOException, SQLException {
         System.out.println("About To Create New Record");
         //My Stringv
-        String query = "INSERT INTO Employees (SSN, Name, ManagerFlag, HourlyRate) VALUES (?, ?, ?, ?)";
+        String query = "INSERT INTO Employees (SSN, Name, ManagerFlag, HourlyRate, Username, Password) VALUES (?, ?, ?, ?, ?, ?)";
 
         //Prevent SQL Injection
         PreparedStatement pstmt = Runner.sC.getConnection().prepareStatement(query);
@@ -309,6 +328,8 @@ public class AdminEmployeeController implements Initializable {
             pstmt.setString(3, "0");
         }
         pstmt.setString(4, txtAddHourlyRate.getText());
+        pstmt.setString(5, txtAddUsername.getText());
+        pstmt.setString(6, txtAddUsername.getText());
 
 
         System.out.println(pstmt.toString());
@@ -338,6 +359,11 @@ public class AdminEmployeeController implements Initializable {
         btnAddAdd.setVisible(false);
 
         btnAddEmployee.setVisible(true);
+
+        lblAddUsername.setVisible(false);
+        lblAddPassword.setVisible(false);
+        txtAddUsername.setVisible(false);
+        txtAddPassword.setVisible(false);
     }
     @FXML
     private void handleCancelBtn(ActionEvent event) throws IOException, SQLException{
@@ -346,6 +372,11 @@ public class AdminEmployeeController implements Initializable {
         btnAddCancel.setVisible(false);
 
         btnAddEmployee.setVisible(true);
+
+        lblAddUsername.setVisible(false);
+        lblAddPassword.setVisible(false);
+        txtAddUsername.setVisible(false);
+        txtAddPassword.setVisible(false);
     }
 }
 
