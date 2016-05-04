@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="paneReport" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.Administrators.AdminReportsController">
+   <children>
+      <Label layoutX="272.0" layoutY="8.0" text="Reports">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblReports" layoutX="27.0" layoutY="30.0" prefHeight="423.0" prefWidth="368.0" />
+      <VBox layoutX="402.0" prefHeight="463.0" prefWidth="205.0" spacing="20.0">
+         <children>
+            <Label prefHeight="29.0" prefWidth="90.0" text="Input Data" underline="true">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label text="Date" />
+            <TextField fx:id="txtDate" disable="true" />
+            <Label text="Total Sales" />
+            <TextField fx:id="txtSales" disable="true" prefHeight="29.0" prefWidth="166.0" />
+            <Label layoutX="10.0" layoutY="176.0" text="Total Revenue" />
+            <TextField fx:id="txtRevenue" disable="true" layoutX="10.0" layoutY="217.0" prefHeight="29.0" prefWidth="166.0" />
+            <HBox prefHeight="40.0" prefWidth="226.0">
+               <children>
+                  <Button fx:id="btnSave" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleSaveBtn" prefHeight="32.0" prefWidth="78.0" text="Save">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnDelete" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleDeleteBtn" prefHeight="32.0" prefWidth="90.0" text="Delete" textAlignment="RIGHT">
+                     <HBox.margin>
+                        <Insets left="75.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="btnAddEvent" layoutX="26.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleNewBtn" text="Add Event" />
+      <VBox fx:id="boxAdd" layoutX="27.0" layoutY="462.0" prefHeight="136.0" prefWidth="300.0" visible="false">
+         <children>
+            <HBox prefHeight="34.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="lblAddDate" text="Date     " />
+                  <TextField fx:id="txtAddDate">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="lblAddSales" text="Total Sales" />
+                  <TextField fx:id="txtAddSales">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="44.0" prefHeight="34.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="lblAddRevenue" text="Revenue" />
+                  <TextField fx:id="txtAddRevenue">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnAddAdd" layoutX="277.0" layoutY="564.0" mnemonicParsing="false" onAction="#handleAddNewBtn" text="Add" visible="false" />
+      <Button fx:id="btnAddCancel" layoutX="323.0" layoutY="564.0" mnemonicParsing="false" onAction="#handleCancelBtn" text="Cancel" visible="false" />
+   </children>
+</AnchorPane>

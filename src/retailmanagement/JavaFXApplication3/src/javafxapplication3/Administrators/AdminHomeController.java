@@ -51,6 +51,8 @@ public class AdminHomeController implements Initializable {
 
     @FXML
     private AnchorPane contentPane;
+    
+    public static String currentUser;
 
     /**
      * Initializes the controller class.

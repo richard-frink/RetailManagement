@@ -24,7 +24,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
+
 import javafx.beans.property.SimpleStringProperty;
+
+
+
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -99,6 +103,8 @@ public class HomeEmployeeController implements Initializable {
         try {
             String query = "SELECT * FROM rsussa1db.Employees WHERE username=\"" + LoginPageController.currentUser + "\";";
 
+            System.out.print(query);
+
             rs = Runner.sC.runQuery(query);
             while (rs.next()) {
                 int ssn = rs.getInt(1);
@@ -119,6 +125,7 @@ public class HomeEmployeeController implements Initializable {
                 empl_Home_hourly_pay.setText("$" + pay);
                 // ... do something with these variables ...
             }
+
             populatePumpTableView();
             populateTimeSheetTableView();
             //System.out.println(" kjghvc "+ credentials.getString(2));
@@ -131,6 +138,12 @@ public class HomeEmployeeController implements Initializable {
 
             // pumpTableView.getColumns().addAll(col);
             /* if(credentials != null){
+
+            //System.out.println(" kjghvc "+ credentials.getString(2));
+            //System.out.println("Result is "+credentials.getString(0));
+            System.out.println(query);
+       /* if(credentials != null){
+
             //credentials.first();
             //System.out.println("Result is "+credentials.getString(0));
                 //empl_Home_title.setText(credentials.getString("Name"));
@@ -138,6 +151,7 @@ public class HomeEmployeeController implements Initializable {
         } catch (Exception e) {
             System.out.println("Query had an issue. ");
         }
+
         /*
         custTabPane.getSelectionModel().selectedItemProperty().addListener(
     new ChangeListener<Tab>() {

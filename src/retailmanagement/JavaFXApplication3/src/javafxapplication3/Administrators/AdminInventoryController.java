@@ -300,10 +300,12 @@ public class AdminInventoryController implements Initializable {
         if (!rs.next()) {
             //create vendor
             System.out.println("\nNeed to create a vendor!");
-            String vendorQuery = "INSERT INTO Vendors (Name) VALUES (?)";
+            String vendorQuery = "INSERT INTO Vendors (Name, Phone, Email) VALUES (?, ?, ?)";
 
             PreparedStatement pstmt1 = Runner.sC.getConnection().prepareStatement(vendorQuery);
             pstmt1.setString(1, txtAddVendorName.getText());
+            pstmt1.setString(2, "000-000-0000");
+            pstmt1.setString(3, "no@gmail.com");
 
             int firstResult = pstmt1.executeUpdate();
             if (firstResult == 0) {

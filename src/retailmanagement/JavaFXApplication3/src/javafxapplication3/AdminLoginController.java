@@ -30,6 +30,8 @@ import javafx.stage.Stage;
 public class AdminLoginController implements Initializable {
 
     @FXML
+    public static String adminSSN="";
+    @FXML
     public TextField adminUser;
     @FXML
     public TextField adminPass;
@@ -77,6 +79,8 @@ public class AdminLoginController implements Initializable {
             } else {
                 //fun stuff
                 notice.setText("");
+                credentials.next();
+                adminSSN = credentials.getString("SSN");
                 Parent root = FXMLLoader.load(getClass().getResource("Administrators/adminMasterLayout.fxml"));
                 Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 Scene scene = new Scene(root, 800, 600);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0" xmlns:jfx="http://www.javafx.com" href="JavaFXApplication3.jnlp">
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXApplication3.jnlp">
   <information>
     <title>JavaFXApplication3</title>
     <vendor>Ted</vendor>
@@ -8,12 +8,12 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXApplication3.jar" size="47109" download="eager" />
+    <jar href="JavaFXApplication3.jar" size="100388" download="eager" />
     <jar href="lib\mysql-connector-java-3.0.14-production-bin.jar" size="236956" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaFXApplication3" >
     <param name="requiredFXVersion" value="8.0+"/>
   </applet-desc>
-  <jfx:javafx-desc width="800" height="600" main-class="javafxapplication3.Runner" name="JavaFXApplication3" />
+  <jfx:javafx-desc  width="800" height="600" main-class="javafxapplication3.Runner"  name="JavaFXApplication3" />
   <update check="always"/>
 </jnlp>
