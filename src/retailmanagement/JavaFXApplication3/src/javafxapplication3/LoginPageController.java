@@ -38,7 +38,7 @@ public class LoginPageController implements Initializable {
     public Label notice;
 
     ResultSet credentials;
-
+    public static String currentUser;     
     /**
      * Initializes the controller class.
      */
@@ -77,7 +77,7 @@ public class LoginPageController implements Initializable {
                 //fun stuff
                 System.out.println("Login Submitted");
                 notice.setText("");
-
+                currentUser = emplUser.getText();
                 Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 Parent root = FXMLLoader.load(getClass().getResource("homeEmployee.fxml"));
 
