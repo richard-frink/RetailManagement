@@ -315,7 +315,7 @@ public class AdminEmployeeController implements Initializable {
     @FXML
     private void handleAddNewBtn(ActionEvent event) throws IOException, SQLException {
         System.out.println("About To Create New Record");
-        //My Stringv
+        //My String
         String query = "INSERT INTO Employees (SSN, Name, ManagerFlag, HourlyRate, Username, Password) VALUES (?, ?, ?, ?, ?, ?)";
 
         //Prevent SQL Injection
@@ -364,6 +364,14 @@ public class AdminEmployeeController implements Initializable {
         lblAddPassword.setVisible(false);
         txtAddUsername.setVisible(false);
         txtAddPassword.setVisible(false);
+
+        //set add textfields to empty
+        txtAddName.setText("");
+        txtAddUsername.setText("");
+        txtAddPassword.setText("");
+        txtAddSSN.setText("");
+        txtAddHourlyRate.setText("");
+        chkAddManager.setSelected(false);
     }
     @FXML
     private void handleCancelBtn(ActionEvent event) throws IOException, SQLException{

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
@@ -9,8 +10,146 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="paneEmployee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="paneEmployee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.Administrators.AdminInventoryController">
    <children>
-      <Label layoutX="339.0" layoutY="14.0" text="Employees" />
+      <Label layoutX="272.0" layoutY="8.0" text="Inventory">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblInventory" layoutX="27.0" layoutY="30.0" prefHeight="423.0" prefWidth="368.0" />
+      <VBox fx:id="boxEdit" layoutX="407.0" layoutY="-3.0" prefHeight="417.0" prefWidth="205.0" spacing="6.0">
+         <children>
+            <Label prefHeight="29.0" prefWidth="90.0" text="Input Data" underline="true">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSKU" text="SKU" />
+            <TextField fx:id="txtSKU" disable="true" editable="false" />
+            <Label fx:id="lblName" text="Name" />
+            <TextField fx:id="txtName" disable="true" prefHeight="29.0" prefWidth="166.0" />
+            <Label text="Current Stock" />
+            <TextField fx:id="txtCurrentStock" disable="true" />
+            <Label text="Retail Price" />
+            <TextField fx:id="txtRetailPrice" disable="true" />
+            <Label text="Vendor Price" />
+            <TextField fx:id="txtVendorPrice" disable="true" />
+            <Label text="Vendor Name" />
+            <TextField fx:id="txtVendorName" disable="true" />
+            <HBox prefHeight="40.0" prefWidth="226.0">
+               <children>
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#handleSaveBtn" text="Save">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnDelete" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleDeleteBtn" text="Delete" textAlignment="RIGHT">
+                     <HBox.margin>
+                        <Insets left="75.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <VBox fx:id="boxAdd1" layoutX="27.0" layoutY="462.0" prefHeight="136.0" prefWidth="300.0" visible="false">
+         <children>
+            <HBox prefHeight="34.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="lblAddSSN" text="SKU            " />
+                  <TextField fx:id="txtAddSKU">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="lblAddName" text="Name          " />
+                  <TextField fx:id="txtAddName">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="lblAddManager" text="CurrentStock" />
+                  <TextField fx:id="txtAddCurrentStock">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblAddHourlyRate" text="Retail Price" />
+                  <TextField fx:id="txtAddRetailPrice">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="lblAddUsername" layoutX="276.0" layoutY="468.0" text="Username" visible="false" />
+      <TextField fx:id="txtAddUsername" layoutX="345.0" layoutY="463.0" visible="false" />
+      <Label fx:id="lblAddPassword" layoutX="279.0" layoutY="499.0" text="Password" visible="false" />
+      <PasswordField fx:id="txtAddPassword" layoutX="345.0" layoutY="494.0" visible="false" />
+      <VBox fx:id="boxAdd2" layoutX="279.0" layoutY="461.0" prefHeight="136.0" prefWidth="300.0" visible="false">
+         <children>
+            <HBox prefHeight="34.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="lblAddSSN1" text="Vendor Price" />
+                  <TextField fx:id="txtAddVendorPrice">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="lblAddName1" text="Vendor Name" />
+                  <TextField fx:id="txtAddVendorName">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnAddAdd" mnemonicParsing="false" onAction="#handleAddNewBtn" text="Add" />
+                  <Button fx:id="btnAddCancel" mnemonicParsing="false" onAction="#handleCancelBtn" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnAddProduct" layoutX="26.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleNewBtn" text="Add Product" />
    </children>
 </AnchorPane>

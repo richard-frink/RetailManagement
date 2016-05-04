@@ -20,8 +20,8 @@ public class Main {
      * @throws java.lang.ClassNotFoundException
      * @throws java.lang.InstantiationException
      * @throws java.lang.IllegalAccessException
-     * @throws java.sql.SQLException
-     */
+         * @throws java.sql.SQLException
+         */
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
 
         Object newInstance;
@@ -30,13 +30,19 @@ public class Main {
         //PreparedStatement updateStaff;
         Statement queryStatement = connection.createStatement();
         //updateStaff = null;
-        String querys = "SELECT * FROM rsussa1db.Employees";
+        String querys = "SELECT SKU,Name,CurrentStock,RetailPrice,VendorPrice,VendorName FROM rsussa1db.Products WHERE CurrentStock>-1;";
         ResultSet results = queryStatement.executeQuery(querys);
         while (results.next()) {
-            System.out.print(results.getString("Username"));
+            System.out.print(results.getString("Name"));
             System.out.print("    ");
-            System.out.print(results.getString("title"));
+            System.out.print(results.getString("CurrentStock"));
             System.out.println();
         }
+//        String name="";
+//        for (int i = 1; i <= 4; i++ ) {
+//            name += " " + results.getString("currentStock");
+//            // Do stuff with name
+//        }
+//        System.out.print(name);
     }
 }
