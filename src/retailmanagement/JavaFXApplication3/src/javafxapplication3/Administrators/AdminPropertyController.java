@@ -227,7 +227,7 @@ public class AdminPropertyController implements Initializable {
             PreparedStatement pstmt = Runner.sC.getConnection().prepareStatement(query2);
 
             pstmt.setString(1, lblOrderID.getText());
-            pstmt.setString(2, txtAddName.getText())    ;
+            pstmt.setString(2, txtAddName.getText());
             pstmt.setString(3, txtAddQuantity.getText());
 
             System.out.print(pstmt);
@@ -307,32 +307,41 @@ public class AdminPropertyController implements Initializable {
     }
 
     @FXML
-    private void handleAddNewIncident(ActionEvent event) throws IOException, SQLException{
+    private void handleAddNewIncident(ActionEvent event) throws IOException, SQLException {
+        String query2 = "INSERT INTO PropertyIssues (TypeOf, DateOf, Description) VALUES (?, ?, ?)";
+
+        PreparedStatement pstmt = Runner.sC.getConnection().prepareStatement(query2);
+
+        pstmt.setString(1, txtAddIncType.getText());
+        pstmt.setString(2, txtAddIncDate.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+        pstmt.setString(3, txtAddIncDesc.getText());
+
+        System.out.print(pstmt);
+        //temp
+        //execute financial reports really quick
+        String temp_query = "INSERT INTO FinancialReports VALUES (?, '5000', '2500')";
+        PreparedStatement pstmt_temp = Runner.sC.getConnection().prepareStatement(temp_query);
+        pstmt_temp.setString(1, txtAddIncDate.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+
         try {
+            int t_rs = pstmt_temp.executeUpdate();
+            if (t_rs == 0) {
+                System.out.println("Couldn't create financial Report");
+            } else {
+                int addInvoice = pstmt.executeUpdate();
+                System.out.println(addInvoice);
 
-            String query2 = "INSERT INTO PropertyIssues (TypeOf, DateOf, Description) VALUES (?, ?, ?)";
+                populateTableView();
 
-            PreparedStatement pstmt = Runner.sC.getConnection().prepareStatement(query2);
+                boxAddInvoice.setVisible(false);
+                btnAddInvoiceToOrder.setVisible(true);
 
-            pstmt.setString(1, txtAddIncType.getText());
-            pstmt.setString(2, txtAddIncDate.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-            pstmt.setString(3, txtAddIncDesc.getText());
+                drpOrder.setDisable(false);
 
-            System.out.print(pstmt);
-
-            int addInvoice = pstmt.executeUpdate();
-            System.out.println(addInvoice);
-
-            populateTableView();
-
-            boxAddInvoice.setVisible(false);
-            btnAddInvoiceToOrder.setVisible(true);
-
-            drpOrder.setDisable(false);
-
-            txtAddQuantity.setText("");
-            txtAddName.setText("");
-
+                txtAddQuantity.setText("");
+                txtAddName.setText("");
+            }
+            // end temp
         } catch (SQLException e) {
             System.out.println(e);
         }
