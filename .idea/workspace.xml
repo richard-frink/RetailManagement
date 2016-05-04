@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="f7b1b0c2-4180-4ba3-9faf-84695f104a74" name="Default" comment="">
+    <list default="true" readonly="true" id="f7b1b0c2-4180-4ba3-9faf-84695f104a74" name="Default" comment="Finished">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminEventsController.java" afterPath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminEventsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminEvents.fxml" afterPath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminEvents.fxml" />
@@ -48,8 +48,8 @@
       <file leaf-file-name="AdminEventsController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminEventsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="292" column="65" selection-start-line="292" selection-start-column="65" selection-end-line="292" selection-end-column="65" />
+            <state relative-caret-position="169">
+              <caret line="296" column="87" selection-start-line="296" selection-start-column="87" selection-end-line="296" selection-end-column="87" />
               <folding>
                 <element signature="method#populateTableView#0;class#AdminEventsController#0" expanded="false" />
                 <element signature="method#handleSaveBtn#0;class#AdminEventsController#0" expanded="false" />
@@ -369,20 +369,16 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/built-jar.properties</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/AdminLogin.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/AdminLoginController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/FXMLDocumentController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/LoginPage.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/LoginPageController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/SqlConnect.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/dist/JavaFXApplication3.html</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/dist/JavaFXApplication3.jar</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/dist/JavaFXApplication3.jnlp</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminHomeController.java</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Runner.java</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/homeEmployee.fxml</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/built-jar.properties</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminPropertyController.class</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminReportsController.class</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminProperty.fxml</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminReports.fxml</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/dist/JavaFXApplication3.html</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/dist/JavaFXApplication3.jar</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/dist/JavaFXApplication3.jnlp</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminReportsController.java</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminReports.fxml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -390,68 +386,12 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/META-INF</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/META-INF/MANIFEST.MF</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminEmployeeController$1.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminEmployeeController$2.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminEmployeeController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminEventsController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController$1.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController$2.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController$3.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController$4.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController$5.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController$6.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController$7.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController$8.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController$9.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminHomeController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminInventoryController$1.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminInventoryController$2.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminInventoryController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminOrdersController$1.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminOrdersController$2.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminOrdersController$3.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminOrdersController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminPropertyController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminReportsController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminVendorsController$1.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminVendorsController$2.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminVendorsController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminEmployees.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminEvents.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminHello.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminInventory.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminMasterLayout.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminOrders.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminProperty.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminReports.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/adminVendors.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/CustHelloController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeEmployeeController$1.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeEmployeeController$2.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeEmployeeController$3.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeEmployeeController$4.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeEmployeeController$5.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeEmployeeController$6.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeEmployeeController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Runner.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Runner.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/custHello.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/custhello.css</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/homeEmployee.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/nbproject/private/private.xml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/nbproject/private/retriever</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/nbproject/private/retriever/catalog.xml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/nbproject/private/retriever/www.oracle.com</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/nbproject/private/retriever/www.oracle.com/technetwork</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/nbproject/private/retriever/www.oracle.com/technetwork/java</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/nbproject/private/retriever/www.oracle.com/technetwork/java/javase</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/nbproject/private/retriever/www.oracle.com/technetwork/java/javase/overview</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/nbproject/private/retriever/www.oracle.com/technetwork/java/javase/overview/index.html</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/CustHelloController.java</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/custHello.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/custhello.css</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminPropertyController$1.class</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminPropertyController$2.class</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminReportsController$1.class</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminReportsController$2.class</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminReportsController$3.class</PATH>
+          <PATH vcs="svn" revision="24">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/AdminReportsController$4.class</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -459,23 +399,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/HomeAdmin.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Administrators/HomeAdminController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/Customers</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/FXMLDocument.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeCust.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeCustController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeCustController_1.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/JavaFXApplication3.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/PumpCust.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/PumpCustController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/TimesheetCust.fxml</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/TimesheetCustController.class</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/adminlogin.css</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/homecust.css</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/loginpage.css</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/pumpcust.css</PATH>
-          <PATH vcs="svn" revision="22">$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/timesheetcust.css</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -956,7 +879,14 @@
       <option name="project" value="LOCAL" />
       <updated>1462393998129</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updating Events">
+      <created>1462399230672</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1462399230672</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1054,7 +984,8 @@
     <MESSAGE value="Employee login was messed up. Fixed log in issue." />
     <MESSAGE value="Finished adding functionality to Orders." />
     <MESSAGE value="Fixing Properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Properties" />
+    <MESSAGE value="Updating Events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating Events" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1452,8 +1383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminEventsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="292" column="65" selection-start-line="292" selection-start-column="65" selection-end-line="292" selection-end-column="65" />
+        <state relative-caret-position="169">
+          <caret line="296" column="87" selection-start-line="296" selection-start-column="87" selection-end-line="296" selection-end-column="87" />
           <folding>
             <element signature="method#populateTableView#0;class#AdminEventsController#0" expanded="false" />
             <element signature="method#handleSaveBtn#0;class#AdminEventsController#0" expanded="false" />

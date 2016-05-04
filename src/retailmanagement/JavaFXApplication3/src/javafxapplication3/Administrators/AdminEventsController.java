@@ -297,27 +297,42 @@ public class AdminEventsController implements Initializable {
         pstmt.setString(1, txtAddIncDate.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
         pstmt.setString(2, txtAddName.getText());
 
+        //execute financial reports really quick
+        String temp_query = "INSERT INTO FinancialReports VALUES (?, '5000', '2500')";
+        PreparedStatement pstmt_temp = Runner.sC.getConnection().prepareStatement(temp_query);
+        pstmt_temp.setString(1, txtAddIncDate.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+
+        try{
+            int t_rs=pstmt_temp.executeUpdate();
+            if(t_rs == 0){
+                System.out.println("Couldn't create financial Report");
+            } else {
+                int rs = pstmt.executeUpdate();
+                if (rs == 0) { //if failed
+                    Stage dialogStage = new Stage();
+                    dialogStage.initModality(Modality.WINDOW_MODAL);
+                    dialogStage.setScene(new Scene(VBoxBuilder.create().
+                            children(new Text("Could not create. Please try again.")).
+                            alignment(Pos.CENTER).padding(new Insets(5)).build()));
+                    dialogStage.show();
+
+                } else {
+                    //succeeded
+                    //update Tableview
+                    populateTableView();
+                }
+            }
+        } catch (SQLException e){
+            System.out.println(e);
+        }
         System.out.println(pstmt.toString());
 
 
-        try {
-            int rs = pstmt.executeUpdate();
-            if (rs == 0) { //if failed
-                Stage dialogStage = new Stage();
-                dialogStage.initModality(Modality.WINDOW_MODAL);
-                dialogStage.setScene(new Scene(VBoxBuilder.create().
-                        children(new Text("Could not create. Please try again.")).
-                        alignment(Pos.CENTER).padding(new Insets(5)).build()));
-                dialogStage.show();
-
-            } else {
-                //succeeded
-                //update Tableview
-                populateTableView();
-            }
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+//        try {
+//
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
 
         boxAdd.setVisible(false);
         btnAddCancel.setVisible(false);

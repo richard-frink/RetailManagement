@@ -29,9 +29,9 @@
                </font>
             </Label>
             <Label text="Date" />
-            <TextField fx:id="btnSSN" />
+            <TextField fx:id="btnSSN" disable="true" />
             <Label text="Name" />
-            <TextField fx:id="btnName" disable="true" prefHeight="29.0" prefWidth="166.0" />
+            <TextField fx:id="btnName" prefHeight="29.0" prefWidth="166.0" />
             <HBox prefHeight="40.0" prefWidth="226.0">
                <children>
                   <Button fx:id="btnSave" mnemonicParsing="false" onAction="#handleSaveBtn" text="Save">
