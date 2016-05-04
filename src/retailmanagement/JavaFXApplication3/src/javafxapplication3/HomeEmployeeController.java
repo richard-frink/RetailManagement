@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
+
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.control.Tab;
@@ -52,72 +53,72 @@ public class HomeEmployeeController implements Initializable {
     public Label empl_Home_title;
     @FXML
     public Label empl_Home_hourly_pay;
-    
+
     @FXML
     private AnchorPane contentPane;
     @FXML
     private Button btnHomeCust;
-    
+
     @FXML
     private TabPane custTabPane;
-    
+
     @FXML
     private Tab custTabHome;
-    
+
     @FXML
     private Tab custTabTimesheet;
     ResultSet rs;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         System.out.println("AT home controller");
         empl_Home_name.setText(LoginPageController.currentUser);
-        try{
-        String query ="SELECT * FROM rsussa1db.Employees WHERE username=\"" + LoginPageController.currentUser + "\";"; 
-        
-        rs = Runner.sC.runQuery(query);
-        while (rs.next()) {
-    int ssn = rs.getInt(1);
-    String dob = rs.getString(2);
-    String name = rs.getString(3);
-    int manager = rs.getInt(4);
-    float pay =  rs.getFloat(5);
-    System.out.println(" "+ssn+" "+dob+" " +name+" "+manager+" "+pay);
-    
-    empl_Home_name.setText(name);
-    
-    if(manager == 0){
-        empl_Home_title.setText("No");
-    }else{
-        empl_Home_title.setText("Yes");
-    }
-    
-    empl_Home_hourly_pay.setText("$"+pay);
-    // ... do something with these variables ...
-  }
-        //System.out.println(" kjghvc "+ credentials.getString(2));
-        //System.out.println("Result is "+credentials.getString(0));
-        System.out.println(query);
+        try {
+            String query = "SELECT * FROM rsussa1db.Employees WHERE username=\"" + LoginPageController.currentUser + "\";";
+            System.out.print(query);
+            rs = Runner.sC.runQuery(query);
+            while (rs.next()) {
+                int ssn = rs.getInt(1);
+                String dob = rs.getString(2);
+                String name = rs.getString(3);
+                int manager = rs.getInt(4);
+                float pay = rs.getFloat(5);
+                System.out.println(" " + ssn + " " + dob + " " + name + " " + manager + " " + pay);
+
+                empl_Home_name.setText(name);
+
+                if (manager == 0) {
+                    empl_Home_title.setText("No");
+                } else {
+                    empl_Home_title.setText("Yes");
+                }
+
+                empl_Home_hourly_pay.setText("$" + pay);
+                // ... do something with these variables ...
+            }
+            //System.out.println(" kjghvc "+ credentials.getString(2));
+            //System.out.println("Result is "+credentials.getString(0));
+            System.out.println(query);
        /* if(credentials != null){
             //credentials.first();
             //System.out.println("Result is "+credentials.getString(0));
                 //empl_Home_title.setText(credentials.getString("Name"));
             }*/
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Query had an issue. ");
         }
-        
-        custTabPane.getSelectionModel().selectedItemProperty().addListener(
-    new ChangeListener<Tab>() {
-        @Override
-        public void changed(ObservableValue<? extends Tab> ov, Tab t, Tab t1) {
-            if(custTabHome.equals(t1)) System.out.println("Home tab clicked");
-            if(custTabTimesheet.equals(t1)) System.out.println("Timesheet tab clicked");
-            System.out.println("Tab Selection changed"+custTabPane.getTabs());
-            System.out.println(" "+ov);
-        }
-    }
-);
+
+//        custTabPane.getSelectionModel().selectedItemProperty().addListener(
+//                new ChangeListener<Tab>() {
+//                    @Override
+//                    public void changed(ObservableValue<? extends Tab> ov, Tab t, Tab t1) {
+//                        if (custTabHome.equals(t1)) System.out.println("Home tab clicked");
+//                        if (custTabTimesheet.equals(t1)) System.out.println("Timesheet tab clicked");
+//                        System.out.println("Tab Selection changed" + custTabPane.getTabs());
+//                        System.out.println(" " + ov);
+//                    }
+//                }
+//        );
         btnLogout1.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override

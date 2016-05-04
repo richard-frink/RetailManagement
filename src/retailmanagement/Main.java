@@ -30,19 +30,20 @@ public class Main {
         //PreparedStatement updateStaff;
         Statement queryStatement = connection.createStatement();
         //updateStaff = null;
-        String querys = "DELETE FROM Vendors WHERE Name='Mountain Dew'";
-        //int results = queryStatement.executeUpdate(querys);
-//        while (results.next()) {
-//            System.out.print(results.getString("Name"));
-//            System.out.print("    ");
-//            System.out.print(results.getString("CurrentStock"));
-//            System.out.println();
-//        }
-//        String name="";
-//        for (int i = 1; i <= 4; i++ ) {
-//            name += " " + results.getString("currentStock");
-//            // Do stuff with name
-//        }
-//        System.out.print(name);
+        String querys = "SELECT SKU FROM rsussa1db.Products WHERE Name ='asgew'";
+//        String querys = "SELECT * FROM OrderInvoice, Products WHERE OrderInvoice.SKU=OrderInvoice.SKU";
+
+        ResultSet results = queryStatement.executeQuery(querys);
+        System.out.print(querys + "\n\n---" + results);
+        while (results.next()) {
+            System.out.print(results.getString("SKU"));
+            System.out.print("    ");
+        }
+
+
+
+//        ResultSet rs = queryStatement.executeQuery("SELECT * FROM rsussa1db.OrderInvoice");
+//        ResultSetMetaData meta = rs.getMetaData();
+//        System.out.println(meta.getColumnLabel(4));
     }
 }

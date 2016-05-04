@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
@@ -9,8 +10,67 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="paneEmployee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="paneEmployee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.Administrators.AdminOrdersController">
    <children>
-      <Label layoutX="339.0" layoutY="14.0" text="Employees" />
+      <Label layoutX="288.0" layoutY="14.0" text="Orders">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="52.0" text="Order to Review:" />
+      <ComboBox fx:id="drpOrder" layoutX="237.0" layoutY="47.0" prefWidth="150.0" />
+      <TableView fx:id="tblOrders" layoutX="27.0" layoutY="88.0" prefHeight="365.0" prefWidth="569.0" />
+      <Button fx:id="btnAddOrder" layoutX="518.0" layoutY="464.0" mnemonicParsing="false" onAction="#handleAddNewBtn" text="Add Order" />
+      <Button fx:id="btnAddInvoiceToOrder" layoutX="27.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleAddInvoiceToOrder" text="Add Invoice to Order" />
+      <VBox fx:id="boxAddInvoice" layoutX="27.0" layoutY="459.0" prefHeight="120.0" prefWidth="261.0" visible="false">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Order ID" />
+                  <Label fx:id="lblOrderID">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="29.0" prefWidth="241.0">
+               <children>
+                  <Label text="Product" />
+                  <ComboBox fx:id="drpSKU" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="261.0">
+               <children>
+                  <Label fx:id="lblAddQuantity" text="Quantity" />
+                  <TextField fx:id="txtAddQuantity">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnAddInvoiceSubmit" mnemonicParsing="false" onAction="#handleAddInvoiceSubmit" text="Add Invoice" />
+                  <Button fx:id="btnAddInvoiceCancel" mnemonicParsing="false" onAction="#handleAddInvoiceCancel" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="100.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
