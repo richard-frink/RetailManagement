@@ -12,10 +12,17 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import javafx.util.Callback;
+import javafxapplication3.AdminLoginController;
+import javafxapplication3.LoginPageController;
 import javafxapplication3.Runner;
 
 import java.io.IOException;
@@ -23,6 +30,9 @@ import java.net.URL;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 /**
@@ -75,6 +85,7 @@ public class AdminOrdersController implements Initializable {
                 orderData.add(order_rs.getString("OrderID"));
             }
             drpOrder.setItems(orderData);
+            btnAddInvoiceToOrder.setVisible(false);
 
             //onchange of drop down, update table
             populateTableOnDropDownUpdate();
@@ -206,7 +217,7 @@ public class AdminOrdersController implements Initializable {
         System.out.println("About To Create New Record in OrderInvoice");
 
         try {
-            String query = "SELECT SKU,Name FROM rsussa1db.Products WHERE Name = '" + drpSKU.getValue()+"'";
+            String query = "SELECT SKU,Name FROM rsussa1db.Products WHERE Name = '" + drpSKU.getValue() + "'";
             System.out.println(query);
             ResultSet SKUGetter = Runner.sC.runQuery(query);
             SKUGetter.next();
@@ -290,7 +301,55 @@ public class AdminOrdersController implements Initializable {
 
     @FXML
     private void handleAddNewBtn(ActionEvent event) throws IOException, SQLException {
+        try {
+            String query2 = "INSERT INTO Orders (ManagerSSN, OrderDate, DeliveryDate, IsActive) VALUES (?, ?, ?, ?)";
 
+            PreparedStatement pstmt = Runner.sC.getConnection().prepareStatement(query2);
+
+            pstmt.setString(1, AdminLoginController.adminSSN);
+            Date date=new Date(); // your date
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(date);
+
+            int year = cal.get(Calendar.YEAR);
+            int month = cal.get(Calendar.MONTH);
+            int day = cal.get(Calendar.DAY_OF_MONTH);
+
+            String datez = month + "/" + day + "/" + year;
+
+
+            pstmt.setString(2, datez);
+            pstmt.setString(3, datez);
+            pstmt.setString(4, "false");
+
+            System.out.print(pstmt);
+
+            int addInvoice = pstmt.executeUpdate();
+            System.out.println(addInvoice);
+
+
+            ObservableList<String> orderData = FXCollections.observableArrayList();
+            try {
+                ResultSet order_rs = Runner.sC.runQuery("SELECT OrderID from rsussa1db.Orders");
+                while (order_rs.next()) {
+                    orderData.add(order_rs.getString("OrderID"));
+                }
+                drpOrder.setItems(orderData);
+                btnAddInvoiceToOrder.setVisible(false);
+
+                //onchange of drop down, update table
+                drpOrder.getSelectionModel().clearSelection();
+                //populateTableOnDropDownUpdate();
+                //putSelectedRowInForm();
+
+            } catch (SQLException e) {
+                System.out.println("Couldn't load Orders!");
+            }
+
+
+        } catch (Exception e){
+
+        }
     }
 }
 

@@ -30,15 +30,15 @@ public class Main {
         //PreparedStatement updateStaff;
         Statement queryStatement = connection.createStatement();
         //updateStaff = null;
-        String querys = "SELECT SKU FROM rsussa1db.Products WHERE Name ='asgew'";
+        String querys = "DELETE FROM Orders WHERE OrderId > 40";
 //        String querys = "SELECT * FROM OrderInvoice, Products WHERE OrderInvoice.SKU=OrderInvoice.SKU";
 
-        ResultSet results = queryStatement.executeQuery(querys);
+        int results = queryStatement.executeUpdate(querys);
         System.out.print(querys + "\n\n---" + results);
-        while (results.next()) {
-            System.out.print(results.getString("SKU"));
-            System.out.print("    ");
-        }
+//        while (results.next()) {
+//            System.out.print(results.getString("SKU"));
+//            System.out.print("    ");
+//        }
 
 
 

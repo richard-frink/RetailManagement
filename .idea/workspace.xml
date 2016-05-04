@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="f7b1b0c2-4180-4ba3-9faf-84695f104a74" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RetailStoreManagement/retailmanagement/Main.class" afterPath="$PROJECT_DIR$/out/production/RetailStoreManagement/retailmanagement/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/AdminLoginController.java" afterPath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/AdminLoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminOrdersController.java" afterPath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminOrdersController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminOrders.fxml" afterPath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminOrders.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java" afterPath="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/retailmanagement/Main.java" afterPath="$PROJECT_DIR$/src/retailmanagement/Main.java" />
     </list>
     <ignored path="RetailManagement.iws" />
@@ -35,13 +33,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminOrdersController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AdminOrdersController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminOrdersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="333" column="40" selection-start-line="333" selection-start-column="40" selection-end-line="333" selection-end-column="40" />
               <folding>
-                <element signature="method#initialize#0;class#AdminOrdersController#0" expanded="false" />
                 <element signature="method#populateTableOnDropDownUpdate#0;class#AdminOrdersController#0" expanded="false" />
                 <element signature="method#putSelectedRowInForm#0;class#AdminOrdersController#0" expanded="false" />
                 <element signature="method#populateTableView#0;class#AdminOrdersController#0" expanded="false" />
@@ -50,67 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeEmployeeController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginPageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/LoginPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homeEmployee.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/homeEmployee.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminEmployeeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminEmployeeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="216" column="46" selection-start-line="215" selection-start-column="8" selection-end-line="216" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Runner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminOrders.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminOrders.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="85" column="36" selection-start-line="80" selection-start-column="16" selection-end-line="85" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -119,8 +60,31 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/retailmanagement/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+            <state relative-caret-position="258">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminLoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/AdminLoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="82" column="56" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Runner.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Runner.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="30" column="110" selection-start-line="30" selection-start-column="105" selection-end-line="30" selection-end-column="110" />
               <folding />
             </state>
           </provider>
@@ -160,14 +124,12 @@
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/AdminLogin.fxml" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminMasterLayout.fxml" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminHomeController.java" />
-        <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/LoginPageController.java" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/homeEmployee.fxml" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/build/classes/javafxapplication3/HomeCust.fxml" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/dist/JavaFXApplication3.jnlp" />
         <option value="$PROJECT_DIR$/out/production/JavaFXApplication3/javafxapplication3/homeEmployee.fxml" />
         <option value="$PROJECT_DIR$/out/production/JavaFXApplication3/javafxapplication3/HomeEmployeeController.class" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/SqlConnect.java" />
-        <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/AdminLoginController.java" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminEmployees.fxml" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminInventory.fxml" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminEmployeeController.java" />
@@ -176,9 +138,13 @@
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminInventoryController.java" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminVendorsController.java" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminOrders.fxml" />
+        <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminOrderNewController.java" />
+        <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminOrderNew.fxml" />
+        <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/LoginPageController.java" />
+        <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/AdminLoginController.java" />
         <option value="$PROJECT_DIR$/src/retailmanagement/Main.java" />
         <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminOrdersController.java" />
-        <option value="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java" />
       </list>
     </option>
   </component>
@@ -395,16 +361,16 @@
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Richard\Documents\Computer-Programs\intellij\trunk\src\retailmanagement\JavaFXApplication3\src\javafxapplication3" />
+      <recent name="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3" />
       <recent name="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="javafxapplication3.Administrators" />
       <recent name="javafxapplication3" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Richard\Documents\Computer-Programs\intellij\trunk\src\retailmanagement\JavaFXApplication3\src\javafxapplication3" />
-      <recent name="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators" />
     </key>
   </component>
@@ -786,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1462360938332</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Employee login was messed up. Fixed log in issue.">
+      <created>1462382082326</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1462382082327</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -810,26 +783,26 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32013202" sideWeight="0.4667171" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24092409" sideWeight="0.54236007" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35148516" sideWeight="0.5453858" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24587458" sideWeight="0.5066007" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35148516" sideWeight="0.45763993" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35148516" sideWeight="0.45461422" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.678337" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.6768448" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49339935" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.32166302" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.32315522" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -881,7 +854,8 @@
     <MESSAGE value="employees modified to have all functionalities" />
     <MESSAGE value="Added Functionality to Inventory in Admin!" />
     <MESSAGE value="Patched up Inventory. Vendors also finished." />
-    <option name="LAST_COMMIT_MESSAGE" value="Patched up Inventory. Vendors also finished." />
+    <MESSAGE value="Employee login was messed up. Fixed log in issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Employee login was messed up. Fixed log in issue." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -894,20 +868,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/retailmanagement/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1000,17 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="10" column="178" selection-start-line="10" selection-start-column="178" selection-end-line="10" selection-end-column="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Runner.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="30" column="110" selection-start-line="30" selection-start-column="105" selection-end-line="30" selection-end-column="110" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1121,24 +1070,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/SqlConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/retailmanagement/Main.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-243">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/AdminLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1214,26 +1149,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        <state relative-caret-position="135">
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Runner.java">
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/homeEmployee.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="330">
+          <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminEmployeeController.java">
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminOrderNew.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="216" column="46" selection-start-line="215" selection-start-column="8" selection-end-line="216" selection-end-column="46" />
+        <state relative-caret-position="210">
+          <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/adminOrderNewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1249,43 +1198,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminOrdersController.java">
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminEmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="237" column="35" selection-start-line="232" selection-start-column="16" selection-end-line="237" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/SqlConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="method#initialize#0;class#AdminOrdersController#0" expanded="false" />
-            <element signature="method#populateTableOnDropDownUpdate#0;class#AdminOrdersController#0" expanded="false" />
-            <element signature="method#putSelectedRowInForm#0;class#AdminOrdersController#0" expanded="false" />
-            <element signature="method#populateTableView#0;class#AdminOrdersController#0" expanded="false" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/homeEmployee.fxml">
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Runner.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
+        <state relative-caret-position="137">
+          <caret line="30" column="110" selection-start-line="30" selection-start-column="105" selection-end-line="30" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/AdminLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="82" column="56" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/LoginPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="85" column="36" selection-start-line="80" selection-start-column="16" selection-end-line="85" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/HomeEmployeeController.java">
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+        <state relative-caret-position="258">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/retailmanagement/JavaFXApplication3/src/javafxapplication3/Administrators/AdminOrdersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="333" column="40" selection-start-line="333" selection-start-column="40" selection-end-line="333" selection-end-column="40" />
+          <folding>
+            <element signature="method#populateTableOnDropDownUpdate#0;class#AdminOrdersController#0" expanded="false" />
+            <element signature="method#putSelectedRowInForm#0;class#AdminOrdersController#0" expanded="false" />
+            <element signature="method#populateTableView#0;class#AdminOrdersController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
