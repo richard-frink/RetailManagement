@@ -30,7 +30,7 @@ public class Main {
         //PreparedStatement updateStaff;
         Statement queryStatement = connection.createStatement();
         //updateStaff = null;
-        String querys = "DELETE FROM Orders WHERE OrderId > 40";
+        String querys = "DELETE FROM PersonsInvolved WHERE Name='John Smith'";
 //        String querys = "SELECT * FROM OrderInvoice, Products WHERE OrderInvoice.SKU=OrderInvoice.SKU";
 
         int results = queryStatement.executeUpdate(querys);
