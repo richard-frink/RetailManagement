@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXApplication3.jar" size="100388" download="eager" />
+    <jar href="JavaFXApplication3.jar" size="111882" download="eager" />
     <jar href="lib\mysql-connector-java-3.0.14-production-bin.jar" size="236956" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaFXApplication3" >
